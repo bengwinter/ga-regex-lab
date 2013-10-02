@@ -6,7 +6,6 @@ describe "Regex Results" do
   let(:source_text) {$source_text}
 
   it "should have valid IP addresses" do
-    binding.pry
     expect(valid_ip_addresses(source_text)).to eq(["127.0.0.1", "203.15.20.74", "18.221.23.4", "18.238.10.38"])
   end
 
